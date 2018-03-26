@@ -33,19 +33,21 @@ class ofxRayTracer : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
         ofColor convertColor(double r, double g, double b);
-	
-private:
-	shared_ptr<ofTexture> toRender;
-    shared_ptr<ofTexture> rendered;
+		ofPixels renderedPixels;
+
+		int h;
+		int w;
+		int howManyRendered;
+		int totalPixels;
+
+	private:
+		shared_ptr<ofTexture> toRender;
+		shared_ptr<ofTexture> rendered;
     
-    PixelRenderThread renderer;
+		PixelRenderThread renderer;
     
-    ofPixels trackPixels;
-    ofPixels renderedPixels;
+		ofPixels trackPixels;
     
-    shared_ptr<World> world;
-    int h;
-    int w;
-    int howManyRendered;
-    int totalPixels;
+		shared_ptr<World> world;
+
 };

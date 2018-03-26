@@ -1,5 +1,7 @@
 #include "ofApp.h"
 
+bool isRendered = false;
+
 //--------------------------------------------------------------
 void ofApp::setup(){
     raytracer = shared_ptr<ofxRayTracer>(new ofxRayTracer);
@@ -14,6 +16,12 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     raytracer->draw();
+	if (!isRendered && raytracer -> howManyRendered >= raytracer -> totalPixels) {
+		ofImage img;
+		img.setFromPixels(raytracer->renderedPixels);
+		img.save("render.png");
+		isRendered = true;
+	}
 }
 
 //--------------------------------------------------------------
