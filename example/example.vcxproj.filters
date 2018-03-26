@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\src\ofxRayTracer.cpp">
+			<Filter>addons\ofxRayTracer\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\src\PixelRenderThread.cpp">
+			<Filter>addons\ofxRayTracer\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs\BRDF.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\BRDFs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs\Lambertian.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\BRDFs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras\Camera.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Cameras</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras\Pinhole.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Cameras</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\GeometricObject.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\GeometricObjects</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\Plane.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\GeometricObjects</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\Sphere.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\GeometricObjects</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Ambient.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Lights</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Directional.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Lights</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Light.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Lights</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Materials\Material.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Materials</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Materials\Matte.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Materials</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Hammersley.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Jittered.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\MultiJittered.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\NRooks.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\PureRandom.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Regular.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Sampler.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\AreaLighting.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\MultipleObjects.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\RayCast.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\SingleSphere.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\Tracer.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\Whitted.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Maths.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Matrix.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\MTRand.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Normal.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Point2D.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Point3D.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Ray.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\RGBColour.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\ShadeRec.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Vector3D.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\World\ViewPlane.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\World</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\World\World.cpp">
+			<Filter>addons\ofxRayTracer\libs\raytracer\World</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer">
+			<UniqueIdentifier>{29446558-7E02-2031-9332-0175}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\src">
+			<UniqueIdentifier>{35D71773-CE6A-4E59-4B7A-554F}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs">
+			<UniqueIdentifier>{4C6B0D59-BFA7-56E5-EDC7-3893}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer">
+			<UniqueIdentifier>{FAECD87E-28BB-13A5-DD21-CF49}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\BRDFs">
+			<UniqueIdentifier>{E9B1C36F-B0AE-2817-6856-D16E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\Cameras">
+			<UniqueIdentifier>{BCC00725-1A7F-B501-4C81-4D23}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\GeometricObjects">
+			<UniqueIdentifier>{ADD70C1E-8129-96D6-BE6B-6ACC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\Lights">
+			<UniqueIdentifier>{5C7C0373-7DD8-B4B1-EDE4-5F7B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\Materials">
+			<UniqueIdentifier>{15268679-0E5B-7CF8-2FF5-9990}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\Samplers">
+			<UniqueIdentifier>{84683FFB-CF46-3ECB-A2A2-4378}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\Tracers">
+			<UniqueIdentifier>{22EE7FA4-FA65-EE90-20F8-0008}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\Utilities">
+			<UniqueIdentifier>{F5F0393E-9CEA-BB04-0B64-84D8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRayTracer\libs\raytracer\World">
+			<UniqueIdentifier>{20F41AC7-EFC5-63D6-DC36-CF2A}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\src\ofxRayTracer.h">
+			<Filter>addons\ofxRayTracer\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\src\PixelRenderThread.h">
+			<Filter>addons\ofxRayTracer\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs\BRDF.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\BRDFs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs\Lambertian.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\BRDFs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras\Camera.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Cameras</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras\Pinhole.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Cameras</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\GeometricObject.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\GeometricObjects</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\Plane.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\GeometricObjects</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\Sphere.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\GeometricObjects</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Ambient.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Lights</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Directional.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Lights</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Light.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Lights</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Materials\Material.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Materials</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Materials\Matte.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Materials</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Hammersley.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Jittered.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\MultiJittered.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\NRooks.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\PureRandom.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Regular.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Sampler.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Samplers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\AreaLighting.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\MultipleObjects.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\RayCast.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\SingleSphere.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\Tracer.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\Whitted.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Tracers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Constants.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Maths.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Matrix.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\MTRand.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\MultiThread.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Normal.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Point2D.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Point3D.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\RandomNumber.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Ray.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\ReferenceCount.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\RGBColour.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\ShadeRec.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\SmartPointer.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Vector3D.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\Utilities</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\World\ViewPlane.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\World</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\World\World.h">
+			<Filter>addons\ofxRayTracer\libs\raytracer\World</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>

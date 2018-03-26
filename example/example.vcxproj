@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>example</RootNamespace>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxRayTracer\libs;..\..\..\addons\ofxRayTracer\libs\raytracer;..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs;..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras;..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects;..\..\..\addons\ofxRayTracer\libs\raytracer\Lights;..\..\..\addons\ofxRayTracer\libs\raytracer\Materials;..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers;..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers;..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities;..\..\..\addons\ofxRayTracer\libs\raytracer\World;..\..\..\addons\ofxRayTracer\src</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxRayTracer\libs;..\..\..\addons\ofxRayTracer\libs\raytracer;..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs;..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras;..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects;..\..\..\addons\ofxRayTracer\libs\raytracer\Lights;..\..\..\addons\ofxRayTracer\libs\raytracer\Materials;..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers;..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers;..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities;..\..\..\addons\ofxRayTracer\libs\raytracer\World;..\..\..\addons\ofxRayTracer\src</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxRayTracer\libs;..\..\..\addons\ofxRayTracer\libs\raytracer;..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs;..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras;..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects;..\..\..\addons\ofxRayTracer\libs\raytracer\Lights;..\..\..\addons\ofxRayTracer\libs\raytracer\Materials;..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers;..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers;..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities;..\..\..\addons\ofxRayTracer\libs\raytracer\World;..\..\..\addons\ofxRayTracer\src</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxRayTracer\libs;..\..\..\addons\ofxRayTracer\libs\raytracer;..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs;..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras;..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects;..\..\..\addons\ofxRayTracer\libs\raytracer\Lights;..\..\..\addons\ofxRayTracer\libs\raytracer\Materials;..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers;..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers;..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities;..\..\..\addons\ofxRayTracer\libs\raytracer\World;..\..\..\addons\ofxRayTracer\src</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="src\main.cpp" />
+		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\src\ofxRayTracer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\src\PixelRenderThread.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs\BRDF.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs\Lambertian.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras\Camera.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras\Pinhole.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\GeometricObject.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\Plane.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\Sphere.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Ambient.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Directional.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Light.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Materials\Material.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Materials\Matte.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Hammersley.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Jittered.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\MultiJittered.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\NRooks.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\PureRandom.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Regular.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Sampler.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\AreaLighting.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\MultipleObjects.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\RayCast.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\SingleSphere.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\Tracer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\Whitted.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Maths.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Matrix.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\MTRand.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Normal.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Point2D.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Point3D.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Ray.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\RGBColour.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\ShadeRec.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Vector3D.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\World\ViewPlane.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxRayTracer\libs\raytracer\World\World.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\src\ofxRayTracer.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\src\PixelRenderThread.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs\BRDF.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\BRDFs\Lambertian.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras\Camera.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Cameras\Pinhole.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\GeometricObject.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\Plane.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\GeometricObjects\Sphere.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Ambient.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Directional.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Lights\Light.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Materials\Material.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Materials\Matte.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Hammersley.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Jittered.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\MultiJittered.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\NRooks.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\PureRandom.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Regular.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Samplers\Sampler.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\AreaLighting.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\MultipleObjects.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\RayCast.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\SingleSphere.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\Tracer.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Tracers\Whitted.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Constants.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Maths.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Matrix.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\MTRand.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\MultiThread.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Normal.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Point2D.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Point3D.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\RandomNumber.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Ray.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\ReferenceCount.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\RGBColour.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\ShadeRec.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\SmartPointer.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\Utilities\Vector3D.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\World\ViewPlane.h" />
+		<ClInclude Include="..\..\..\addons\ofxRayTracer\libs\raytracer\World\World.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+			<Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc">
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties RESOURCE_FILE="icon.rc" />
+		</VisualStudio>
+	</ProjectExtensions>
+</Project>
